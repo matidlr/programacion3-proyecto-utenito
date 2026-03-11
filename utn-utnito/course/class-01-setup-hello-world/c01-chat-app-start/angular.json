@@ -66,6 +66,9 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "buildTarget": "chat-app:build"
+          },
           "configurations": {
             "production": {
               "buildTarget": "chat-app:build:production"
@@ -84,5 +87,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "f919e8c9-2aaf-4725-b74a-933eb8b61506"
   }
 }
